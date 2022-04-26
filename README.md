@@ -9,8 +9,10 @@ Simple HTTPS file downloader. Made in Python.
 ### Info
 It uses `urllib`
 
-Version - 0.3
-> Colors in output
+Version - 0.4
+> Progress bar
+> 
+> Convert bytes to "KB", "MB", "GB" and etc.
 
 ***
 Made by mi66mc
