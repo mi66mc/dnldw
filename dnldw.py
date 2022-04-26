@@ -14,7 +14,7 @@ u = urllib.request.urlopen(url)
 f = open(file_name, 'wb')
 meta = u.info()
 file_size = int(u.length)
-print("Downloading: %s Bytes: %s" % (file_name, file_size))
+print("\033[1;34mDownloading: %s Bytes: %s" % (file_name, file_size))
 
 file_size_dl = 0
 block_sz = 8192
@@ -31,3 +31,7 @@ while True:
     sys.stdout.write(status)
 
 f.close()
+# print blue color
+print("\033[1;34m")
+print("\n\n\n\033[92mDownloaded: %s Bytes: %s\n" % (file_name, file_size))
+sys.exit(0)
