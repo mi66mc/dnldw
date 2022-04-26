@@ -7,7 +7,7 @@ Simple HTTPS file downloader. Made in Python.
 `$ python3 dnldw.py <url>`
 
 ### Info
-It uses `urllib`
+It uses `urllib`, `sys` and `math`
 
 Version - 0.4
 > Progress bar
