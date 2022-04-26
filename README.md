@@ -9,5 +9,7 @@ Simple HTTPS file downloader. Made in Python.
 ### Info
 It uses `urllib`
 
+Varsion - 0.2
+
 ***
 Made by mi66mc
