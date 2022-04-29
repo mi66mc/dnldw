@@ -47,15 +47,16 @@ print("\n\033[1;34mDownloading: %s Size: %s\n" % (file_name, file_size_mb))
 
 file_size_dl = 0
 block_sz = 8192
-def progress_bar(current, total, dnldw_bytes, bar_length=20):
+def progress_bar(current, total, dnldw_bytes, bar_length=15):
     fraction = current / total
 
-    arrow = int(fraction * bar_length - 1) * '-' + '>'
-    padding = int(bar_length - len(arrow)) * ' '
+    arrow = int(fraction * bar_length - 1) * '█' + '█'
+    padding = int(bar_length - len(arrow)) * '░'
 
     ending = '\n' if current == total else '\r'
 
-    print(f'- Progress: [{arrow}{padding}] {int(fraction*100)}% | Status: {u.getcode()} | Downloading: {convert_size(dnldw_bytes)}            ', end=ending)
+    print(f'- Progress: [{arrow}{padding}] {int(fraction*100)}% | Status: {u.getcode()} | Downloading: {convert_size(dnldw_bytes)}  ', end=ending)
+
 while True:
     buffer = u.read(block_sz)
     if not buffer:
