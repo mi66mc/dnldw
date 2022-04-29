@@ -4,15 +4,17 @@ HTTPS File Downloader (CLI Usage)
 Simple HTTPS file downloader. Made in Python.
 
 ## Usage
-`$ python3 dnldw.py <url>`
+**"<>" = Required**
+
+**"[]" = Optional**
+
+`$ python3 dnldw.py <url> [name]`
 
 ### Info
-It uses `urllib`, `sys` and `math`
+It uses `urllib`, `sys`, `datetime` and `math`
 
-Version - 0.5
-> Details of the download
-> 
-> Big title
+Version - 0.6
+> New progress bar
 
 ***
 Made by mi66mc
